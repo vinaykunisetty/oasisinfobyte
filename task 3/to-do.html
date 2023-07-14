@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do</title>
+    <link rel="icon" type="image/x-icon" href="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png">
+	<link rel="stylesheet" href="to-do.css" />
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+	
+	<header>
+		<h1 align="center">Tasks</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What have you planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="ADD TASK" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2 align="center">Tasks List</h2><br>
+			<div id="tasks"></div>
+		</section>
+			<h2 align="center">Tasks Done</h2><br>
+				<div id="done" ></div>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
